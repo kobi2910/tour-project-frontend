@@ -1,0 +1,351 @@
+/* General Styles */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  z-index: 1;
+}
+
+/* forms */
+.form-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.form-container h1 h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: x-large;
+} 
+.form-container form {
+  display: grid;
+  gap: 1rem;
+}
+.form-container form input {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #999;
+}
+.form-container form input[type="submit"] {
+  max-width: fit-content;
+  background-color: #343a40;
+  color: #f8f9fa;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.form-container form input[type="submit"]:hover {
+  background-color: #999;
+}
+.form-container form label {
+  font-size: large;
+}
+.form-container form textarea {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #999;
+}
+.form-container form select {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #999;
+}
+
+
+/* Button Styles */
+.btn-primary {
+  font-size: larger;
+  background-color: #f8f9fa;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: border 0.7s ease;
+}
+
+.btn-primary:hover {
+  border: 1px solid #343a40;
+  color: #999;
+}
+
+.btn-primary a {
+  text-decoration: none;
+  color: #343a40;
+}
+.btn-primary a:visited{
+  color: #343a40;
+} 
+
+.btn-secondary {
+  font-size: larger;
+  background-color: #343a40;
+  color: #f8f9fa;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: border 0.7s ease;
+}
+
+.btn-secondary:hover {
+  border: 1px solid #343a40;
+  color: #999;
+}
+.btn-secondary a {
+  text-decoration: none;
+  color: #f8f9fa;
+}
+.btn-secondary a:visited{
+  color: #f8f9fa;
+}
+
+/* .background-video {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh; 
+}
+
+.background-video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+} */
+
+.site-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  color: #343a40;
+  font-family: Arial, sans-serif;
+  z-index: 1;
+}
+
+.header {
+  text-decoration: none;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  position: sticky;
+}
+
+.header h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  margin: 0;
+}
+
+/* Navigation Styles */
+.navbar {
+  background-color: #ddd;
+  color: #343a40;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  margin-right: 5px;
+  text-decoration: none;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+  
+}
+
+.nav-item {
+  display: inline-flex;
+  margin-left: 2px;
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+.nav-item:visited{
+  color: #343a40;
+}
+
+.nav-item:hover {
+  color: #999;
+}
+
+.log--btn {
+  margin-left: auto;
+  align-items: center;
+  color: #343a40;
+}
+.log--btn p {
+  color: #343a40;
+}
+
+/* home */
+.home--section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem;
+  background-color: #f8f9fa;
+  height: fit-content;
+  -webkit-text-fill-color: black;
+}
+
+.home--section--card{
+  width: 30%;
+  padding: 20px;
+  border-radius: 1rem;
+  display: grid;
+  background-color: white;
+  height: fit-content;
+  -webkit-text-fill-color: black;
+}
+
+.home--section--post{
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* style for trip list */
+.trip-list-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.trip-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem;
+  /* background-color: white;  */
+  height: fit-content;
+  -webkit-text-fill-color: black;
+}
+
+/* style for trip card inside the list */
+.card--container {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 1rem;
+  box-shadow: 5px 10px 8px #999;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 0.5rem;
+  background-color: white;
+  height: fit-content;
+  -webkit-text-fill-color: black;
+}
+
+.card--container img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.card--info {
+  padding: 1rem;
+}
+.card--info h3 h2 {
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.card--text {
+  padding: 2px;
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+
+
+/* trip details */
+.trip-details-container {
+  
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.trip-title {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: x-large;
+}
+.trip-details{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.trip-description{
+  margin-bottom: 1rem;
+}
+
+
+
+/* blog */
+.post-details-container{
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.post-details-container h1 {
+  text-align: left;
+  margin-bottom: 1rem;
+  font-size: x-large;
+}
+
+.post--img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+.post-header{
+  display: flex;
+  margin-bottom: 1rem;
+  font-size: x-large;
+}
+
+.post-details--text{
+  text-align: left;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+/* about */
+.about-container{
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.about-info{
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
